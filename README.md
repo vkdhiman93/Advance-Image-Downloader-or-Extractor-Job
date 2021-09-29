@@ -3,12 +3,12 @@ This project contains an Image scraper that can query Google Images and then scr
 and save a specified number of results to an AWS S3 Bucket specified by the user.
 
 ## The Source Code
-The src code for this project is found in the [app](./Image Scraper/app) directory; [app.py](./Image Scraper/app/app.py)
-contains the lambda function handler and modules [scraper](./Image Scraper/app/scraper) and [aws_s3](./Image Scraper/app/aws_s3)
+The src code for this project is found in the [app](./Image%20Scraper/app) directory; [app.py](./Image%20Scraper/app/app.py)
+contains the lambda function handler and modules [scraper](./Image%20Scraper/app/scraper) and [aws_s3](./Image%20Scraper/app/aws_s3)
 are helper modules for image scraping and persisting to S3 respectively.
 
 ## The Dockerfile and building the image
-The [Dockerfile](./Image Scraper/Dockerfile) contains the instructions to build this image. You can
+The [Dockerfile](./Image%20Scraper/Dockerfile) contains the instructions to build this image. You can
 run the command to create the image lambda/image-scraper version 1.0
 ```
 docker build -t lambda/image-scraper:1.0 .
@@ -49,7 +49,7 @@ You will also need to create an Elastic Container Registry within AWS - a place 
 store your Docker images so they can be used by Lambda. For extra help, AWS have published
 a guide to working with ECR https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html.
 
-Create a 2nd Lambda Function and copy the code from [lamda2](./lamda2) .This contains the code to zip the images and create a presigned url to be mailed to the client(or yourself).
+Create a 2nd Lambda Function and copy the code from [lamda2](./lamda2.py) .This contains the code to zip the images and create a presigned url to be mailed to the client(or yourself).
 
 ## Create a Step funtion State Machine
 Create a step function to invoke the two lambda functions one by one . You can change the input (i.e. search query,count etc.) in the payload section of json input given in Step Function.
