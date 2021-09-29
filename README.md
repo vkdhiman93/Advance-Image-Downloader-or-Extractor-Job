@@ -39,7 +39,7 @@ returned and then persist them to a bucket called 'tiger' within a 'folder' call
 The image names are based on a hash of their data so the names are likely to differ. You can also 
 verify the result by checking your S3 bucket on AWS.
 
-*Note : You first have to create an S3 bucket in your AWS account and give the required permission of access. Also enter your aws credentials wherever mentioned in the script *
+*Note : You first have to create an S3 bucket in your AWS account and give the required permission of access. Also enter your aws credentials wherever mentioned in the script*
 
 ## Deploying to Lambda.
 AWS Lambda can now take an image to run as a serverless function. For extra help, AWS have published a guide to working with containers in 
@@ -49,7 +49,7 @@ You will also need to create an Elastic Container Registry within AWS - a place 
 store your Docker images so they can be used by Lambda. For extra help, AWS have published
 a guide to working with ECR https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html.
 
-Create a 2nd Lambda Function and copy the code from [lambda2](./lambda2) .This contains the code to zip the images and create a presigned url to be mailed to the client(or yourself).
+Create a 2nd Lambda Function and copy the code from [lamda2](./lamda2) .This contains the code to zip the images and create a presigned url to be mailed to the client(or yourself).
 
 ## Create a Step funtion State Machine
 Create a step function to invoke the two lambda functions one by one . You can change the input (i.e. search query,count etc.) in the payload section of json input given in Step Function.
