@@ -1,1 +1,1 @@
-# Advance-Image-Downloader-or-Extractor-Job-
+# Advance-Image-Downloader-or-Extractor-Job
