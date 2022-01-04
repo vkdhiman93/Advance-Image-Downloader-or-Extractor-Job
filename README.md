@@ -59,3 +59,9 @@ Once running your container on Lambda you may get an error message. This may be 
 timeout period and low memory capacity. I use a timeout period of 60 seconds and a
 500Mb allocation of memory to be on the safe side. I am only scraping 10-20 images per request. You
 may need to adjust your timeout and memory needs accordingly.
+
+## Project Deployment Demo Video
+
+https://youtu.be/pGK9_2yub7U
+
+
