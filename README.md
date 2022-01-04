@@ -62,7 +62,6 @@ may need to adjust your timeout and memory needs accordingly.
 
 ## Project Deployment Demo Video
 
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pGK9_2yub7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+[![Advance Image Extractor](https://img.youtube.com/vi/pGK9_2yub7U/0.jpg)](https://youtu.be/pGK9_2yub7U)
+
 
